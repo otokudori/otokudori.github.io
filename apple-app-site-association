@@ -1,0 +1,13 @@
+{
+    "applinks": {
+        "App": [], 
+        "details": [
+            {
+                "appID": "J626S2664V.as.chi.otokudori.develop", 
+                "paths": [
+                    "*"
+                ]
+            }
+        ]
+    }
+}
