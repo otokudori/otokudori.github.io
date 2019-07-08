@@ -1,0 +1,660 @@
+@charset "utf-8";
+/*----------
+PC and SP
+----------*/
+@font-face {
+   font-family: "Barlow";
+   src: url('./fonts/Barlow-SemiBold.ttf') format("truetype");
+}
+body {
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+    font-weight: 500;
+    word-break: break-word;
+    width: 100%;
+    height: 100%;
+}
+/*----------
+PC
+----------*/
+@media screen and (min-width: 769px){
+.sp_only {
+    display: none;
+}
+/*----------
+Common
+----------*/
+/* hover */
+a, input{
+    transition: all 0.3s;
+}
+a:hover, input[type="button"]:hover, input[type="submit"]:hover {
+    opacity: 0.5;
+}
+.main {
+    width: 700px;
+    margin: 0 auto;
+}
+#article .t_center, #article .category{
+    text-align: center;
+}
+#article .category {
+    position: relative;
+}
+#article .category::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 1px;
+    background: linear-gradient(to right,#33cdc3, #c4dc04);
+    left: 50%;
+    bottom: -40px;
+    transform: translate(-50%,0);
+}
+#article .category .b {
+    color: #287788;
+    font-size: 40px;
+    font-family: 'Barlow', sans-serif;
+    letter-spacing: 0.2em;
+    line-height: 1;
+}
+#article .category .s {
+    color: #000;
+    margin-top: 25px;
+    display: block;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+}
+/*----------
+Top
+----------*/
+#article .top .bg01 {
+    position: relative;
+    background: url(../img/bg01.jpg) no-repeat top center;
+    background-attachment: fixed;
+    height: 80vh;
+    width: 100%;
+    z-index: -1;
+    background-size: cover;
+}
+#article .top .bg01::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, #32cdc8, #c8dc00);
+    bottom: 0;
+    left: 0;
+}
+#article .top .lead {
+    margin: 80px 0 115px;
+    font-weight: 600;
+}
+#article .top .catch {
+    font-size: 45px;
+    line-height: 1;
+    letter-spacing: 0.2em;
+}
+#article .text {
+    margin-top: 40px;
+    line-height: 2.176;
+    font-size: 17px;
+    letter-spacing: 0.1em;
+}
+/*----------
+Service
+----------*/
+#article .service {
+    margin-top: 60px;
+}
+#article .service .block {
+    margin: 100px auto;
+}
+#article .service .title {
+    font-size: 30px;
+}
+#article .service .description {
+    font-size: 16px;
+    line-height: 2;
+    margin-top: 25px;
+}
+#article .service .bg02 {
+    background: url(../img/bg02.jpg) no-repeat top center;
+    position: relative;
+    background-attachment: fixed;
+    height: 80vh;
+    width: 100%;
+    z-index: -1;
+    margin-top: 80px;
+    background-size: cover;
+}
+#article .service .bg03 {
+    background: url(../img/bg03.jpg) no-repeat top center;
+    position: relative;
+    background-attachment: fixed;
+    height: 80vh;
+    width: 100%;
+    z-index: -1;
+    background-size: cover;
+}
+/*----------
+News
+----------*/
+#article .news {
+    margin-top: 210px;
+}
+#article .news .news_lists {
+    margin-top: 80px;
+}
+#article .news .excerpt {
+    border-bottom: 1px solid #e2e2e4;
+    position: relative;
+    margin-top: 20px;
+    font-size: 14px;
+}
+#article .news .excerpt::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    top: 50%;
+    right: 10px;
+    transform: translate(0, -50%) rotate(45deg);
+    transition: all 0.3s;
+}
+#article .news .excerpt:hover::after {
+    opacity: 0.5;
+    cursor: pointer;
+}
+#article .news .excerpt > a {
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
+    padding:  15px 20px 15px 15px;
+}
+#article .news .date {
+    display: block;
+    width: 90px;
+    margin-right: 45px;
+    font-weight: 600;
+    font-family: 'Barlow', sans-serif;
+    letter-spacing: 0.1em;
+}
+#article .news .content {
+    width: 500px;
+    margin-right: 30px;
+}
+/*----------
+Contact
+----------*/
+#article .contact {
+    margin-top: 155px;
+}
+#article .contact form {
+    margin-top: 80px;
+}
+#article .contact .form li {
+    margin-top: 30px;
+}
+#article .contact form .input {
+    display: block
+}
+#article .contact form .input > input {
+    width: 100%;
+    height: 45px;
+    outline: none;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    font-size: 13px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+    border: 1px solid #c8c8c8;
+}
+#article .contact form .input > input::-webkit-input-placeholder,#article .contact form .input > input:-ms-input-placeholder{
+    color: #c8c8c8; 
+}
+#article .contact textarea {
+    resize: none;
+    width: 100%;
+    height: 200px;
+    outline: none;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    font-size: 13px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+    border: 1px solid #c8c8c8;
+}
+#article .contact textarea::-webkit-input-placeholder,#article .contact textarea:-ms-input-placeholder {
+    color: #c8c8c8; 
+}
+#article .contact .btn {
+    text-align: center;
+    margin-top: 40px;
+}
+#article .contact .btn > input {
+    background: linear-gradient(to right,#33cdc5, #c4dc04);
+    border: none;
+    outline: none;
+    width: 450px;
+    height: 55px;
+    border-radius: 28px;
+    color: #fff;
+    padding: 0;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+}
+#article .contact .btn > input:hover {
+    cursor: pointer;
+}
+/*----------
+Company
+----------*/
+#article .company {
+    margin-top: 145px;
+}
+#article .company #map {
+    margin-top: 80px;
+    width: 100%;
+    height: 320px;
+}
+#article .company dl {
+    display: grid;
+    grid-template-columns: 80px 345px 80px 195px;
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 1.714;
+}
+#article .company dt {
+    color: #287687;
+    margin-top: 25px;
+    font-weight: 600;
+}
+#article .company dd {
+    margin-top: 25px;
+}
+/*----------
+Footer
+----------*/
+.footer {
+    margin-top: 120px;
+    background: #29282e;
+    padding: 25px 0;
+    color: #fff;
+}
+.footer ul {
+    text-align: center;
+}
+.footer ul li {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 70px;
+}
+.footer ul li:first-child {
+    margin-left: 0;
+}
+.footer ul li::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 14px;
+    background: #fff;
+    top: 50%;
+    right: -35px;
+    transform: translate(0, -50%);
+}
+.footer ul li:last-child::after {
+    content: none;
+}
+.footer ul li > a {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+.footer .copy {
+    font-size: 12px;
+}
+.footer .copy {
+    text-align: center;
+    display: block;
+    margin-top: 15px;
+}
+}
+
+/*----------
+SP
+----------*/
+@media screen and (max-width:768px){
+.pc_only {
+    display: none;
+}
+/*----------
+Common
+----------*/
+body{
+    background: #29282e;
+}
+.bg_white {
+    background: #fff;
+}
+.main {
+    padding:  0 5.333vw;
+}
+#article .t_center, #article .category{
+    text-align: center;
+}
+#article .category {
+    position: relative;
+}
+#article .category::after {
+    content: "";
+    position: absolute;
+    width: 21.333vw;
+    height: 0.267vw;
+    background: linear-gradient(to right,#33cdc3, #c4dc04);
+    left: 50%;
+    bottom: -10.667vw;
+    transform: translate(-50%,0);
+}
+#article .category .b {
+    color: #287788;
+    line-height: 1;
+    font-size: 10.667vw;
+    font-family: 'Barlow', sans-serif;
+    letter-spacing: 0.2em;
+}
+#article .category .s {
+    color: #000;
+    margin-top: 6.667vw;
+    display: block;
+    font-size: 3.467vw;
+}
+/*----------
+Top
+----------*/
+#article .top {
+    margin-top: 80vh;
+    position: relative;
+}
+#article .top .bg01 {
+    position: fixed;
+    background: url(../img/bg01.jpg) no-repeat top center;
+    background-size: auto 100vh;
+    height:100vh;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+}
+#article .top .bg01.landscape {
+    position: fixed;
+    background: url(../img/bg01.jpg) no-repeat top center;
+    background-size: 100% auto;
+    height:100vh;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+}
+#article .top .main::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 0.267vw;
+    background: linear-gradient(to right, #32cdc8, #c8dc00);
+    top: 0;
+    left: 0;
+}
+#article .top .lead {
+    padding: 16vw 0;
+    letter-spacing: 0.2em;
+}
+#article .top .catch {
+    font-size: 8vw;
+    font-weight: bold;
+}
+#article .text {
+    margin-top: 8vw;
+    line-height: 2;
+    font-size: 4.267vw;
+    text-align: left;
+}
+/*----------
+Service
+----------*/
+#article .service {
+}
+#article .service > .main:first-child {
+    padding: 16vw 0 21.333vw;
+}
+#article .service .block {
+    margin: 80vh 0 0;
+    padding: 13.333vw 5.333vw;
+}
+#article .service .title {
+    font-size: 6.667vw;
+    line-height: 1.6;
+}
+#article .service .description {
+    font-size: 4.267vw;
+    line-height: 2;
+    margin-top: 5.333vw;
+    text-align: left;
+}
+#article .service .bg02 {
+    position: fixed;
+    background: url(../img/bg02.jpg) no-repeat 12.673% top;
+    background-size: auto 100vh;
+    height: 100vh;
+    width: 100%;
+    z-index: -2;
+    top: 0;
+}
+#article .service .bg02.landscape {
+    position: fixed;
+    background: url(../img/bg02.jpg) no-repeat top center;
+    background-size: 100% auto;
+    height: 100vh;
+    width: 100%;
+    z-index: -2;
+    top: 0;
+}
+#article .service .bg03 {
+    position: fixed;
+    background: url(../img/bg03.jpg) no-repeat 76.8% top;
+    background-size: auto 100vh;
+    height: 100vh;
+    width: 100%;
+    z-index: -3;
+    top: 0;
+}
+#article .service .bg03.landscape {
+    position: fixed;
+    background: url(../img/bg03.jpg) no-repeat top center;
+    background-size: 100% auto;
+    height: 100vh;
+    width: 100%;
+    z-index: -3;
+    top: 0;
+}
+/*----------
+News
+----------*/
+#article .news {
+    padding-top: 53.333vw;
+}
+#article .news .excerpt {
+    border-bottom: 1px solid #e2e2e4;
+    position: relative;
+    margin-top: 5.333vw;
+    font-size: 3.733vw;
+}
+#article .news .excerpt::after {
+    content: "";
+    position: absolute;
+    width: 1.6vw;
+    height: 1.6vw;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    top: 50%;
+    right: 2.667vw;
+    transform: translate(0, -50%) rotate(45deg);
+}
+#article .news .news_lists {
+    margin-top: 21.333vw;
+}
+#article .news .excerpt > a {
+    align-items: center;
+    line-height: 1.5;
+    display: block;
+    padding: 4vw 5.333vw 4vw 4vw;
+}
+#article .news .excerpt > a span {
+    display: block;
+}
+#article .news .date {
+    font-family: 'Barlow',sans-serif;
+    font-weight: 600;
+}
+#article .news .content {
+    margin-top: 2.5vw;
+    width: 71.875vw;
+}
+/*----------
+Contact
+----------*/
+#article .contact {
+    padding-top: 40vw;
+}
+#article .contact form {
+    margin-top: 21.333vw;
+}
+#article .contact .form li {
+    margin-top: 8vw;
+}
+#article .contact form .input {
+    display: block;
+}
+#article .contact form .input > input {
+    width: 100%;
+    height: 12vw;
+    box-sizing: border-box;
+    font-size: 4.2667vw;
+    font-family: 游ゴシック体, YuGothic, 游ゴシック, "Yu Gothic", メイリオ, sans-serif;
+    outline: none;
+    padding: 4vw 5.333vw;
+    border : 1px solid #c8c8c8;
+}
+#article .contact form .input > input::-webkit-input-placeholder,#article .contact form .input > input:-ms-input-placeholder{
+    color: #c8c8c8; 
+}
+#article .contact textarea {
+    resize: none;
+    width: 100%;
+    height: 53.333vw;
+    box-sizing: border-box;
+    font-size: 4.2667vw;
+    font-family: 游ゴシック体, YuGothic, 游ゴシック, "Yu Gothic", メイリオ, sans-serif;
+    outline: none;
+    padding: 4vw 5.333vw;
+    border : 1px solid #c8c8c8;
+}
+#article .contact textarea::-webkit-input-placeholder,#article .contact textarea:-ms-input-placeholder{
+    color: #c8c8c8; 
+}
+#article .contact .btn {
+    text-align: center;
+    margin-top: 10.667vw;
+}
+#article .contact .btn > input {
+    background: linear-gradient(to right,#33cdc5, #c4dc04);
+    border: none;
+    outline: none;
+    width: 60vw;
+    height: 14.667vw;
+    border-radius: 7.467vw;
+    color: #fff;
+    padding: 0;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+}
+#article .contact .btn > input:hover {
+    cursor: pointer;
+}
+/* form ios reset */
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+textarea {
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+/*----------
+Company
+----------*/
+#article .company {
+    padding: 40vw 0 16vw;
+}
+#article .company #map {
+    margin-top: 21.333vw;
+    width: 100%;
+    height: 320px;
+}
+#article .company dl {
+    margin-top: 8vw;
+    line-height: 1.5;
+    font-size: 3.733vw;
+}
+#article .company dt {
+    color: #287687;
+    margin-top: 6.667vw;
+    font-weight: 600;
+}
+#article .company dd {
+    margin-top: 2.667vw;
+}
+/*----------
+footer
+----------*/
+.footer {
+    background: #29282e;
+    padding: 6.667vw 0;
+    color: #fff;
+}
+.footer ul {
+    text-align: center;
+}
+.footer ul li {
+    position: relative;
+    display: inline-block;
+    font-size: 2.4vw;
+    margin-right: 5.333vw;
+}
+.footer ul li:last-child {
+    margin-right: 0;
+}
+.footer ul li::after {
+    content: "";
+    position: absolute;
+    width: 0.267vw;
+    height: 2.4vw;
+    background: #fff;
+    top: 50%;
+    right: -2.667vw;
+    transform: translate(0, -50%);
+}
+.footer ul li:last-child::after {
+    content: none;
+}
+.footer ul li > a {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+.footer .copy {
+    text-align: center;
+    display: block;
+    margin-top: 4vw;
+    font-size: 3.2vw;
+}
+}

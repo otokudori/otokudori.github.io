@@ -1,9 +1,106 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Otokudori</title>
-</head>
-<body>どうもオトクドリです</body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- tdk -->
+    <title>オトクドリ &mdash; お得情報まとめアプリ</title>
+    <meta name="description" content="オトクドリはお得情報をまとめて見ることができるアプリケーションです。" />
+    <meta name="keywords" content="オトク, コード決済, お得, アプリ" />
+    <meta name="author" content="Chia Inc." />
+<!-- ogp -->
+    <meta property="og:title" content="オトクドリ &mdash; お得情報まとめアプリ" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://otokudori.jp/" />
+    <meta property="og:image" content="http://otokudori.jp/img/og_img.png" />
+    <meta property="og:site_name" content="オトクドリ &mdash; お得情報まとめアプリ" />
+    <meta property="og:description" content="トクドリはお得情報をまとめて見ることができるアプリケーションです。" />
+<!-- css -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+<!-- js -->
+    <script type="text/javascript" src="./js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+</head> 
+<body>
+    <article id="article" class="wrappaer">
+
+        <!-- top -->
+        <section class="top bg_white t_center">
+            <div class="fixed bg01"></div>
+            <div class="main">
+                <div class="lead">
+                    <h1 class="catch">価値の流通を自由に</h1>
+                    <p class="text">誰にでも役に立ち、<br class="pc_only">生活を楽しく豊かなものに変える</p>
+                </div>
+            </div>
+        </section><!-- end top -->
+
+        <!-- service -->
+        <section class="service t_center">
+            <div class="main bg_white">
+                <h2 class="category"><span class="b">SERVICE</span><br><span class="s">サービス</span></h2>
+            </div>
+            <div class="fixed bg02"></div>
+            <div class="block main bg_white">
+                <h3 class="title">クリプトカレンシ採掘<br class="sp_only">アプリ「ALOE」</h3>
+                <p class="description">ダイナミックアルゴリズムを搭載。<br class="pc_only">専門知識不要でクライプトカレンシをマイニングできる<br class="pc_only">アプリをクロスデバイス環境対象に提供<br class="pc_only">および運営をおこなっています（日本国外限定のサービスです）。</p>
+            </div>
+            <div class="fixed bg03"></div>
+            <div class="block main bg_white">
+                <h3 class="title">事業者向け<br class="sp_only">広告技術の開発支援</h3>
+                <p class="description">代理配信型広告配信モジュールを筆頭に<br class="pc_only">広告配信事業者向けに専門性の高い広告技術を利活用するための<br class="pc_only">事業支援、アプリケーション開発およびライセンシング<br class="pc_only">など運営支援をおこなっています。</p>
+            </div> 
+        </section><!-- end service -->
+        <!-- news -->
+        <section class="news bg_white">
+            <div class="main">
+                <h2 class="category"><span class="b">NEWS</span><br><span class="s">ニュース</span></h2>
+                <ul class="news_lists">
+                    <li class="excerpt"><a href="https://medium.com/chiainc/%E6%9C%AC%E5%BA%97%E7%A7%BB%E8%BB%A2%E3%81%AE%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B-4a4aeb921317" target="_blank"><span class="date">June 4, 2018</span><span class="content">業務拡大に伴う東京都中野区への本店移転のお知らせ</span></a></li>
+                    <li class="excerpt"><a href="https://medium.com/chiainc/%E3%83%81%E3%82%A2-%E3%83%98%E3%83%83%E3%83%80%E5%85%A5%E6%9C%AD%E3%83%AD%E3%82%B0%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AB%E3%82%88%E3%82%8B%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E5%90%8D%E5%AF%84%E3%81%9B%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%81%AE%E6%8F%90%E4%BE%9B%E3%82%92%E9%96%8B%E5%A7%8B-df0ddcbc0862" target="_blank"><span class="date">May 23, 2017</span><span class="content">ヘッダ入札ログデータによるデータベース名寄せサービスを提供開始</span></a></li>
+                    <li class="excerpt"><a href="https://medium.com/chiainc/%E3%83%81%E3%82%A2-%E3%83%98%E3%83%83%E3%83%80%E5%85%A5%E6%9C%AD%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB-scarlet-%E3%81%AE%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9%E6%8F%90%E4%BE%9B%E3%82%92%E9%96%8B%E5%A7%8B-566f8e2bac47" target="_blank"><span class="date">April 27, 2017</span><span class="content">サーバ間接続型ヘッダ入札モジュール「Scarlet」を開発、事業者向けにライセンス提供を開始</span></a></li> 
+                </ul>
+            </div>
+        </section><!-- end news -->
+        <!-- company -->
+        <section class="company bg_white">
+            <div class="main">
+                <h2 class="category"><span class="b">COMPANY</span><br><span class="s">会社情報</span></h2>
+            </div>
+
+             <div class="main">
+                <dl>
+                    <dt>会社名</dt><dd>チア株式会社（Chia inc.）</dd>
+                    <dt>資本金</dt><dd>3,000,000円</dd>
+                    <dt>代表者</dt><dd>高田勝裕 博士（理学）</dd>
+                    <dt>設立</dt><dd>平成29年4月</dd>
+                    <dt>住所</dt><dd>&#12306;164-0013<br>東京都中野区弥生町2丁目41番17号<br>東京コンテンツインキュベーションセンター<br>No.01</dd>
+                    <dt>主な事業</dt><dd>分散型サービスの開発および運営業務</dd>
+                    <dt>電話番号</dt><dd>03-6667-5045（代表）</dd>
+                </dl>
+            </div>
+        </section><!-- end company -->
+
+    </article>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="main">
+            <ul>
+                <li><a href="#">利用規約</a></li>
+                <li><a href="#">プライバシーポリシー</a></li>
+                <!-- <li><a href="#">特定商取引に基づく表記</a></li>-->
+            </ul>
+            <small class="copy">&copy;2017-2018 Chia Inc. All Rights Reserved.</small>
+        </div>
+    </footer><!-- end footer -->
+
+<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+(function(){ var widget_id = 'TftJsK5CvR';var d=document;var w=window;function l(){var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+</script>
+<!-- {/literal} END JIVOSITE CODE -->
+</body>
 </html>
