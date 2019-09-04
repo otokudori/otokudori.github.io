@@ -52,7 +52,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
     padding-top: 40px;
   }
   .aa-header .aa-header-content li {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 
@@ -72,7 +72,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
     padding-right: 20px !important;
   }
   .aa-header .aa-header-content li {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 
